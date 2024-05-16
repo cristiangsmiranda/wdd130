@@ -13,19 +13,32 @@
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1000px;
     padding: 20px;
+    margin: 0 auto;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: #2eb6a4;
 }
 
+marker {
+  display: list-item;
+  unicode-bidi: isolate;
+}
+
 header {
     padding: 20px;
     background-color: #b2eb97;
+}
+
+.color-paragraph {
+  background-color: #b2eb97;
+  color: var(--white);
 }
 
 p {
@@ -53,4 +66,4 @@ nav {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
   }
-  
+
