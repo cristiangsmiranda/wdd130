@@ -6,65 +6,89 @@
         <title>About us | Rafting Adventures</title>
         <meta name="description" content="About page for Rafting Adventures">
         <meta name="author" content="Cristian Miranda">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poetsen+One&display=swap');
-        </style>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        </style>
         <link rel="stylesheet" href="styles/rafting.css">
     </head>
     <body>
-        <header>
-            <nav>
-            <img src="images/raftinglogo.jpg" alt="Rafting Site Logo">
-            <a href="index.html">Index </a>
-            <a href="about.html">About </a>
-            <a href="trips.html">Trips </a>
-            <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-        <main>
-            <div class="hero">
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting53_600.jpg" alt="...">
-                <article>
+        <div class="conteiner">
+            <header>
+                <img src="images/rafting.logo.png" alt="Rafting Site Logo">
+                <nav>
+                    <div class="box">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="box">
+                        <a href="about.html">About Us</a>
+                    </div>
+                    <div class="box">
+                        <a href="trips.html">Trips</a>
+                    </div>
+                    <div class="box">
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="hero">
+                    <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting53_600.jpg" alt="rafting image">
                     <h1>Rafting Adventures</h1>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/25/a8/35/caption.jpg?w=1200&h=900&s=1" alt="...">
-                    <p>The fun begins when the route starts</p>
-                </article>
-            </div>
-            <section>
-                <h2>History</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing ...</p>
-            </section>
-            <section>
-                <h2>Adventure Awaits You!</h2>
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting32_600.jpg" alt="Rafting" width="700">
-                <p>Rafting Image 1</p>
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting20_600.jpg" alt="Rafting" width="700">
-                <p>Rafting Image 2</p>
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting17_600.jpg" alt="Rafting" width="700">
-                <p>Rafting Image 3</p>
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting13_1024.jpg" alt="Rafting" width="700">
-                <p>Rafting Image 4</p>
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting48_1024.jpg" alt="Rafting" width="700">
-                <p>Rafting Image 5</p>
-            </section>
-        </main>
-        <footer>
-            <p>©️2024 | Rafting Adventures | Cristian Miranda</p>
-            <nav class="sociallinks">
-                <a href="https://facebook.com">
-                    <img src="images/facebook.png" alt="Facebook">
-                </a>
-                <a href="https://www.linkedin.com/in/cristian-gabriel-miranda-/">
-                    <img src="images/linkedin.png" alt="Linkedin">
-                </a>
-                <a href="https://instagram.com">
-                    <img src="images/instagram.png" alt="Instagram">
-                </a>
-            </nav>
-        </footer>
+                        <article>
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/25/a8/35/caption.jpg?w=1200&h=900&s=1" alt="happy client">
+                            <p>The fun begins when the route starts!</p>
+                        </article>    
+                    <section class="history">
+                        <h2>History</h2>
+                        <p class="history-grid">
+                            <span class="history-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, similique consequuntur. Dolore ratione atque aut sunt voluptatum totam commodi.
+                            </span>
+                            <img src="images/rafting.history.jpg" alt="History">
+                            <span class="history-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, similique consequuntur. Dolore ratione atque aut sunt voluptatum totam commodi.
+                            </span>
+                        </p>
+                    </section>
+                    <section class="adventure">
+                        <h2>Adventure Awaits You!</h2>
+                        <div class="adventure-grid">
+                            <figure>
+                                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting32_600.jpg" alt="Rafting" width="700">
+                                <sub>Rafting Image 1</sub>                       
+                            </figure>
+                            <figure>
+                                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting20_600.jpg" alt="Rafting" width="700">
+                                <sub>Rafting Image 2</sub>   
+                            </figure>
+                            <figure>
+                                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting17_600.jpg" alt="Rafting" width="700">
+                                <sub>Rafting Image 3</sub>    
+                            </figure>
+                            <figure>
+                                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting13_1024.jpg" alt="Rafting" width="700">
+                                <sub>Rafting Image 4</sub>  
+                            </figure>
+                            <figure>
+                                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting48_1024.jpg" alt="Rafting" width="700">
+                                <sub>Rafting Image 5</sub> 
+                            </figure>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer>
+                <p>©️2024 | Rafting Adventures | Created by Cristian Miranda</p>
+                <nav class="sociallinks">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/in/cristian-gabriel-miranda-/">
+                        <img src="images/linkedin.png" alt="Linkedin">
+                    </a>
+                    <a href="https://instagram.com">
+                        <img src="images/instagram.png" alt="Instagram">
+                    </a>
+                </nav>
+            </footer>
+        </div>
     </body>
 </html> 
       
