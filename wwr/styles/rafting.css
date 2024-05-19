@@ -16,8 +16,8 @@
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
-    margin: 8px;
+    max-width: 100%;
+    margin: 0;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -26,20 +26,18 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 65%;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;  
 }
 
 header {
-    background-image: linear-gradient(to top right, rgb(173, 225, 250), rgb(89, 194, 243), rgb(92, 132, 206),  rgb(33, 73, 148));
+    background-image: linear-gradient(to top right, rgb(173, 225, 250), rgb(89, 194, 243), rgb(92, 132, 206), rgb(33, 73, 148));
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #ffffff;
-    padding: 10px;
-    max-width: 1000px;
+    padding: 0px;
+    width: 100%;
 }
 
 header img {
@@ -163,7 +161,7 @@ section img {
     unicode-bidi: isolate;
 }
 
-img{
+img {
     grid-column: 2;
     align-self: start;
     overflow: clip;
