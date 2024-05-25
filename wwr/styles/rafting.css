@@ -73,8 +73,7 @@ h1, h2 {
 
 iframe {
     display: block;
-    overflow-clip-margin: content-box !important;
-    overflow: clip !important;
+    overflow: clip;
     border-width: 2px;
     border-style: inset;
     border-color: initial;
