@@ -14,6 +14,17 @@
     --nav-hover-background-color: var(--primary-color);
 }
 
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .container {
     max-width: 65%;
     margin: 0 auto;
@@ -56,8 +67,10 @@ nav a:hover {
 }
 
 main {
-    align-content: center;
-    padding: 20px 0;
+    width: 100%;
+    background-color: white;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1, h2 {
@@ -66,25 +79,11 @@ h1, h2 {
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     font-weight: bold;
-    font-family: var(--font-family);
+    font-family: var(--heading-font);
+    text-align: center;
 }
 
-iframe {
-    display: block;
-    overflow: clip;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-}
-
-section {
-    margin-top: 40px;
-    display: block;
-    unicode-bidi: isolate;
-}
-
-.employee-grid h2 {
+h1 {
     grid-column: 1 / -1;
     background-image: linear-gradient(to top right, #2d77ef, #0e9fe2, #77a8f5, #4589fd);
     color: rgb(255, 255, 255);
@@ -92,87 +91,66 @@ section {
     padding: 10px;
 }
 
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-.employee-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    text-align: center;
-}
-
-.contact-form h2 {
-    text-align: center;
-}
-
-.form-container {
+.trip_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trip-box {
+    background-image: linear-gradient(to top right, #2d77ef, #0e9fe2, #77a8f5, #4589fd);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.trip-grid {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100%;
+    max-width: 250px;
 }
 
-form {
-    display: block;
-    margin-top: 0em;
-    unicode-bidi: isolate;
+.trip-grid img {
+    max-width: 100%;
+    height: auto;
 }
 
-label {
-    cursor: default;
-}
-
-form input[type="text"], form input[type="email"], form textarea {
-    width: 80%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.radio-form {
-    display: inline-block;
-    margin-top: 1px;
-    width: auto;
-}
-
-label[for="message"] {
-    display: block;
-    text-align: start;
-}
-
-form textarea {
-    margin-left: 4%;
-    resize: none;
-}
-
-form input[type="checkbox"], form input[type="radio"] {
-    margin-right: 5px;
-}
-
-input[type="checkbox" i] {
-    background-color: initial;
-    cursor: default;
-    appearance: auto;
+.trip-grid p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    width: 100%;
     box-sizing: border-box;
-    margin: 3px 3px 3px 4px;
-    padding: initial;
-    border: initial;
+    text-align: center;
 }
 
-form button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
     background-color: var(--primary-color);
     color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #ddd;
 }
 
 footer {

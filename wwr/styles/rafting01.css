@@ -31,36 +31,39 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to top right, rgb(173, 225, 250), rgb(89, 194, 243), rgb(92, 132, 206), rgb(33, 73, 148));
-    display: flex;
-    justify-content: space-around;
+    background-image: linear-gradient(to top right, #2d77ef, #0e9fe2, #77a8f5, #4589fd);
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
+    padding: 10px;
     border-bottom: 1px solid #ffffff;
-    padding: 0px;
-    width: 100%;
 }
 
 header img {
-    max-width: 100%;
-    padding-left: 5%;
+    max-width: 100px;
+    margin-right: 20px;
 }
 
 nav {
     display: flex;
-    color: rgb(92, 132, 206);
+    justify-content: space-around;
+}
+
+nav .box {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
 }
 
-.box {
-    background-color: #fff;
-    border: 1px solid rgb(92, 132, 206);
-    padding: 10px;
-    margin: 0px;
-}
-
-main {
-    align-content: center;
-    padding: 20px 0;
+nav a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
 }
 
 .hero {
@@ -117,13 +120,15 @@ p {
 }
 
 .history {
-    background-color: rgb(89, 194, 243);
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb, #ffffff, #7aa7f6);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+    color: #000000;
 }
+
 .history h2 {
-    color: rgb(255, 255, 255);
+    color: #000000;
     text-align: center;
 }
 
@@ -133,10 +138,17 @@ p {
     align-items: center;
 }
 
-section img {
+.history-grid img {
     margin: 0 auto;
     margin-top: 20px;
     max-width: 250px;
+    border-radius: 5px;
+}
+
+.adventure {
+    padding: 20px;
+    border-radius: 10px;
+    color: #000000;
 }
 
 .adventure h2 {
@@ -161,15 +173,16 @@ section img {
     unicode-bidi: isolate;
 }
 
-img {
-    grid-column: 2;
-    align-self: start;
-    overflow: clip;
+.figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-sub {
+.figure sub {
     text-align: center;
     margin-top: 2px;
+    color: #fff;
 }
 
 footer {
